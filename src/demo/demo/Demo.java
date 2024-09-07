@@ -7,7 +7,7 @@ public class Demo {
 		System.out.println("Working");
 		
 		for(int i=0; i< 10; i++) {
-			System.out.println(i);
+			System.out.println("Error" + i);
 			
 		}
 	}
