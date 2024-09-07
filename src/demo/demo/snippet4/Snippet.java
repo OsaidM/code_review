@@ -8,7 +8,7 @@ import demo.snippet1.User;
 public class Snippet {
 	// Querying user by ID with potential SQL injection risk
 	public User getUserById(int id) throws SQLException {
-	    String query = "SELECT * FROM users WHERE id = " + id;
+	    String query = "SELECT * FROM users WHERE id = " + id ;
 	    ResultSet result = executeQuery(query);
 	    return mapUser(result);
 	}
@@ -24,8 +24,9 @@ public class Snippet {
 	    return null;
 	}
 
-	private ResultSet executeQuery(String query) {
-		return null;
+	private String executeQuery(String query) {
+		query = "something";
+		return query;
 	}
 
 }
